@@ -1,0 +1,28 @@
+#N canvas 632 147 615 537 12;
+#X floatatom 143 159 5 0 20000 0 freq - freq;
+#X floatatom 244 161 5 100 4000 0 min - sens_min;
+#X floatatom 244 186 5 100 5000 0 max - sens_max;
+#X floatatom 142 185 5 0 1 0 vol - vol;
+#X text 140 114 audio;
+#X text 234 115 sensor;
+#X obj 245 220 vsl 15 128 0 4000 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 12084 1;
+#X obj 323 185 r sens_in;
+#X floatatom 245 361 5 0 0 0 - - -;
+#X obj 142 218 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 1905 1;
+#X floatatom 141 134 5 0 1 0 curve - curve;
+#X obj 27 73 r #curve;
+#X obj 24 113 r #freq;
+#X obj 23 175 r #vol;
+#X obj 316 97 r #sens_min;
+#X obj 315 136 r #sens_max;
+#X connect 7 0 6 0;
+#X connect 7 0 8 0;
+#X connect 9 0 3 0;
+#X connect 11 0 10 0;
+#X connect 12 0 0 0;
+#X connect 13 0 9 0;
+#X connect 14 0 1 0;
+#X connect 15 0 2 0;
+#X coords 0 -1 1 1 200 300 1 100 100;
