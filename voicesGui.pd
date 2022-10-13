@@ -1,0 +1,43 @@
+#N canvas 195 164 682 537 12;
+#X floatatom 241 166 5 0 20000 0 freq - freq 0;
+#X floatatom 133 142 5 100 4000 0 min - sens_min 0;
+#X floatatom 133 167 5 100 5000 0 max - sens_max 0;
+#X floatatom 241 192 5 0 1 0 vol - vol 0;
+#X text 238 119 audio;
+#X text 123 120 sensor;
+#X obj 110 234 vsl 15 128 0 4000 0 0 empty empty in 0 -9 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X obj -8 182 r sens_in;
+#X floatatom 110 375 5 0 0 3 - - - 0;
+#X floatatom 241 141 5 0 1 0 curve - curve 0;
+#X obj 318 58 r #curve;
+#X obj 318 97 r #freq;
+#X obj 318 136 r #vol;
+#X obj -8 92 r #sens_min;
+#X obj -8 122 r #sens_max;
+#X obj 151 234 vsl 15 128 0 4000 0 0 empty empty out 0 -9 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X floatatom 151 375 5 0 0 0 - - - 0;
+#X obj 216 234 vsl 15 128 0 1 0 0 empty empty scaled 0 -9 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X floatatom 216 375 5 0 1 0 - - - 0;
+#X obj 318 175 r post_scale;
+#X obj 318 214 r post_curve;
+#X obj 258 234 vsl 15 128 0 1 0 0 empty empty curved 0 -9 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X floatatom 258 375 5 0 1 0 - - - 0;
+#X obj -8 152 r distanceValid;
+#X connect 6 0 8 0;
+#X connect 7 0 6 0;
+#X connect 10 0 9 0;
+#X connect 11 0 0 0;
+#X connect 12 0 3 0;
+#X connect 13 0 1 0;
+#X connect 14 0 2 0;
+#X connect 15 0 16 0;
+#X connect 17 0 18 0;
+#X connect 19 0 17 0;
+#X connect 20 0 21 0;
+#X connect 21 0 22 0;
+#X connect 23 0 15 0;
+#X coords 0 -1 1 1 200 300 1 100 100;
