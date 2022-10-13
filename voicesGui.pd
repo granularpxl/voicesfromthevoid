@@ -15,7 +15,7 @@
 #X obj 318 136 r #vol;
 #X obj -8 92 r #sens_min;
 #X obj -8 122 r #sens_max;
-#X obj 151 234 vsl 15 128 0 4000 0 0 empty empty out 0 -9 0 10 #fcfcfc
+#X obj 151 234 vsl 15 128 0 4000 0 0 empty empty valid 0 -9 0 10 #fcfcfc
 #000000 #000000 0 1;
 #X floatatom 151 375 5 0 0 0 - - - 0;
 #X obj 216 234 vsl 15 128 0 1 0 0 empty empty scaled 0 -9 0 10 #fcfcfc
