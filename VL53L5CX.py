@@ -36,7 +36,7 @@ while True:
         distancemin = distancevalid.min()
         
         
-        print(distancevalid)
+        # print(distancevalid)
         client.send_message("/distance", distancemin)
         
     time.sleep(0.1)
