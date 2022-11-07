@@ -108,9 +108,8 @@
 #X obj 34 23 voicesGui;
 #X msg 39 474 \; #curve 0.5 \; #sens_min 300 \; #sens_max 2500 \; #freq
 218 \; #vol 0.9;
-#X text 37 328 voices v3.0;
 #X obj 38 384 delay 20;
-#N canvas 833 715 1049 300 preset 0;
+#N canvas 712 631 1049 300 preset 0;
 #X obj 19 137 text define preset1;
 #X msg 495 272 line 0;
 #X obj 330 241 text sequence preset1 -g;
@@ -146,15 +145,17 @@
 #X restore 125 380 pd preset;
 #X obj 125 354 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
 #000000 #000000;
-#X obj 407 676 > 0.1;
-#X obj 407 710 s active;
+#X obj 428 719 > 0.1;
+#X obj 428 757 s active;
+#X obj 423 676 line;
+#X text 37 328 voices v3.1;
 #X connect 0 0 15 0;
 #X connect 1 0 2 0;
 #X connect 2 0 27 0;
 #X connect 2 0 42 0;
 #X connect 3 0 10 0;
 #X connect 3 0 36 0;
-#X connect 3 0 50 0;
+#X connect 3 0 49 0;
 #X connect 4 0 5 0;
 #X connect 4 0 6 0;
 #X connect 5 0 2 3;
@@ -182,7 +183,7 @@
 #X connect 28 0 27 0;
 #X connect 28 1 27 1;
 #X connect 29 0 28 0;
-#X connect 30 0 47 0;
+#X connect 30 0 46 0;
 #X connect 31 0 32 0;
 #X connect 32 0 34 0;
 #X connect 33 0 31 0;
@@ -190,12 +191,15 @@
 #X connect 34 0 9 0;
 #X connect 35 0 38 0;
 #X connect 36 0 7 0;
+#X connect 36 0 51 0;
 #X connect 37 0 7 0;
+#X connect 37 0 51 0;
 #X connect 38 0 37 0;
 #X connect 39 0 0 0;
 #X connect 41 0 35 0;
 #X connect 41 0 37 1;
-#X connect 47 0 20 0;
-#X connect 49 0 48 0;
-#X connect 50 0 51 0;
+#X connect 46 0 20 0;
+#X connect 48 0 47 0;
+#X connect 49 0 50 0;
+#X connect 51 0 49 0;
 #X coords 0 0 1 1 85 60 0;
