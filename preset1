@@ -1,0 +1,10 @@
+;
+#vol 0.95;
+#freq 218;
+#noise_vol;
+#curve 0.5;
+#sens_min 100;
+#sens_max 2500;
+#vib_depth 2;
+#vib_rate 0.1;
+#vib_delay 5001
