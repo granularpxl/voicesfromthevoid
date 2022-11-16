@@ -1,5 +1,6 @@
 ;
 #vol 0.95;
+#note;
 #freq 218;
 #noise_vol 1000;
 #curve 0.5;
